@@ -14,6 +14,7 @@
     ls -la /etc/sysconfig/
 
 -rw-r--r--  1 root root   27 Jan 27 18:21 clock
+
 -rw-r--r--  1 root root   20 Jan 27 18:18 clock.org
 
 # clockファイルをvimコマンドで変更する
@@ -43,13 +44,13 @@
     cat /etc/sysconfig/clock
 
 ZONE="Asia/Tokyo"
+
 UTC=true
 
     cat /etc/localtime
 
-TZi۫ڀ~~JDTJSTTZif2
-                        e¤p۫ڀLMTJDTJST
 JST-9
+
 
 # 時間を確認
 
