@@ -2,19 +2,19 @@
 <img width="298" alt="gitallstructure" src="https://user-images.githubusercontent.com/121922228/215035266-fa213272-bca0-4755-8fc8-338f8086ba36.png">
 
 # GitHubとCloud9の連携
-##### Cloud9で鍵の作成
+### Cloud9で鍵の作成
 
     ssh-keygen
-##### Enter3回
+#### Enter3回
 
-#### 鍵の確認
+### 鍵の確認
 
     ls ~/.ssh
 ##### 公開鍵(id_rsa.pub)：連携先(GitHubなど)の鍵
 ##### 秘密鍵(id_rsa)：Cloud9の鍵
 ##### (authorized_keys：認可されたキー)
 
-#### 公開鍵の取得
+### 公開鍵の取得
 
     cat ~/.ssh/id_rsa.pub
 ##### ssh-rsa ～ ip-数字までをコピー
@@ -23,12 +23,12 @@
 ![New_SSH_key](https://user-images.githubusercontent.com/121922228/215038564-8544147f-2e49-4f2d-8bf4-32fb94bdd3e7.PNG)
 ##### コピーを貼付
 
-#### 接続テスト
+### 接続テスト
 
     ssh -T git@github.com
 ##### なんか出たらyesを入力(一致の確認？)
 
-#### Gitのブランチ名はデフォルトでmainだがCloud9はmasterなのでCloud9のブランチ名を変更し一致させる
+### Gitのブランチ名はデフォルトでmainだがCloud9はmasterなのでCloud9のブランチ名を変更し一致させる
 
     git config --global init.defaultBranch main
 
@@ -41,12 +41,12 @@
 
     git status
 
-#### Cloud9からインデックスに追加
+### Cloud9からインデックスに追加
 
     git add [ファイル名]
 ##### ファイル名に.(ドット)でフォルダ内全て追加可能
 
-#### インデックスからローカルリポジトリへコミット
+### インデックスからローカルリポジトリへコミット
 
     git commit -m "[メッセージ]"
 ##### -m はメッセージが追加できるようになるコマンド
@@ -77,14 +77,14 @@
 ###### リポジトリURL確認コマンド
 
     git remote -v
-#### ローカルリポジトリからリモートリポジトリ(GitHub)へアップロード
+### ローカルリポジトリからリモートリポジトリ(GitHub)へアップロード
 
     git push origin main
 ##### -u コマンドを使うと次回からアクセス先とブランチ名を省略できる
 
     git push -u origin main
 
-#### 2回目以降は3つのコマンドで更新できる
+### 2回目以降は3つのコマンドで更新できる
 
     git add .
     git commit -m ""
