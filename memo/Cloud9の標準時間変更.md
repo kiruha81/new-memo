@@ -47,10 +47,11 @@ ZONE="Asia/Tokyo"
 
 UTC=true
 
+##### cat = ファイルの閲覧
+
     cat /etc/localtime
 
 JST-9
-
 
 # 時間を確認
 
