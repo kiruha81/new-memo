@@ -82,3 +82,8 @@
 
     git push -u origin main
 
+#### 2回目以降は3つのコマンドで更新できる
+
+    git add .
+    git commit -m ""
+    git push
