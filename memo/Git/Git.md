@@ -10,8 +10,8 @@
 #### 鍵の確認
 
     ls ~/.ssh
-##### 公開鍵(id_rsa.pub) 連携先(GitHubなど)の鍵
-##### 秘密鍵(id_rsa) Cloud9の鍵
+##### 公開鍵(id_rsa.pub)：連携先(GitHubなど)の鍵
+##### 秘密鍵(id_rsa)：Cloud9の鍵
 ##### (authorized_keys：認可されたキー)
 
 #### 公開鍵の取得
@@ -26,7 +26,7 @@
     ssh -T git@github.com
 ##### なんか出たらyesを入力(一致の確認？)
 
-#### Gitのブランチ名はデフォルトでmainだがCloud9はmasterなのでCloud9のブランチ名を変更する
+#### Gitのブランチ名はデフォルトでmainだがCloud9はmasterなのでCloud9のブランチ名を変更し一致させる
 
     git config --global init.defaultBranch main
 
@@ -66,3 +66,19 @@
 #### コミットしたローカルリポジトリをリモートリポジトリへ
 ##### https://github.com/new → リポジトリ名(Repository name)を入力して
 ![create_repository](https://user-images.githubusercontent.com/121922228/215036202-4391c495-714d-4d9b-a845-ea1b7f5b0fe7.PNG)
+##### 作成したリモートリポジトリページに出てきたURLをSSHを選択してコピー
+
+    git remote add origin コピーしたURL
+###### 間違った場合の変更方法
+
+    git remote set-url origin リポジトリURL
+###### リポジトリURL確認コマンド
+
+    git remote -v
+#### ローカルリポジトリからリモートリポジトリ(GitHub)へアップロード
+
+    git push origin main
+##### -u コマンドを使うと次回からアクセス先とブランチ名を省略できる
+
+    git push -u origin main
+
