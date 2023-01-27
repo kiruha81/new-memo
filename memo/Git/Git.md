@@ -19,7 +19,9 @@
     cat ~/.ssh/id_rsa.pub
 ##### ssh-rsa ～ ip-数字までをコピー
 
-##### https://github.com/settings/keys → ![New_SSH_key](https://user-images.githubusercontent.com/121922228/215038564-8544147f-2e49-4f2d-8bf4-32fb94bdd3e7.PNG) → 貼付
+##### https://github.com/settings/keys
+![New_SSH_key](https://user-images.githubusercontent.com/121922228/215038564-8544147f-2e49-4f2d-8bf4-32fb94bdd3e7.PNG)
+##### コピーを貼付
 
 #### 接続テスト
 
