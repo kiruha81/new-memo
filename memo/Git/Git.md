@@ -89,3 +89,5 @@
     git add .
     git commit -m ""
     git push
+
+![gitallstructure2](https://user-images.githubusercontent.com/121922228/215045949-fcfbdb4c-eaa4-412c-81b0-1dbd1197fbf3.png)
