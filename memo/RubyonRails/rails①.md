@@ -169,6 +169,19 @@
 #### ルーティング自動生成
 ##### new show index edit create destroy update
 
+    resources :books, only: [:show, :index, :create, :edit]
+    resources :books, except: [:top]
+##### onlyは指定のみルーティング、exceptは除外するルーティングを定める
+
+#### resourceによるネスト
+
+    resources :books do
+      resource :favorites, only: [:create, :destroy]
+    end
+##### books/favoritesというpathになる(ネスト化)
+##### ネストしたfavoritesには:idがつかない
+##### ルーティング要チェック
+
 ## deviseのview
 #### confirmations：確認
 #### mailer：
