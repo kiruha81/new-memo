@@ -20,6 +20,10 @@
 # config/environments 誰でも見れるようにするやつ
 
     config.hosts.clear
+# アプリを日本時間にする
+#### config/application.rbに記述を追加
+
+    config.time_zone = 'Tokyo'
 
 # rails サーバー起動
 
