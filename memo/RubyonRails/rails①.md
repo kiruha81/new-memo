@@ -183,7 +183,7 @@
       resource :favorites, only: [:create, :destroy]
     end
 ##### books/favoritesというpathになる(ネスト化)
-##### ネストしたfavoritesには:idがつかない
+##### 単数形でネストしたfavoritesには:idがつかない
 ##### ルーティング要チェック
 
 ## deviseのview
