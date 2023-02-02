@@ -296,3 +296,7 @@
     end
 
 ##### アプリ2 14章
+
+# 非同期通信におけるlocal: false と remote: true
+#### form_withはlocal:true
+#### link_toはremote: true
