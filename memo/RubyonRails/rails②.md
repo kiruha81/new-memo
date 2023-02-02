@@ -297,6 +297,9 @@
 
 ##### アプリ2 14章
 
-# 非同期通信におけるlocal: false と remote: true
+
+# 非同期通信
+#### https://qiita.com/hapiblog2020/items/3ba7e7edc02f01d987b9
+## 非同期通信におけるlocal: false と remote: true
 #### form_withはlocal:true
 #### link_toはremote: true
