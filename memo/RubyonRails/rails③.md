@@ -230,7 +230,7 @@
       </div>
     </div>
 
-##### グループオーナーの表示
+##### グループオーナーとグループ設立日の表示
 
     <td><%= @group.owner.name ? @group.owner.name : "不明" %></td>
     <td><%= @group.created_at.strftime('%Y/%m/%d') %></td>
